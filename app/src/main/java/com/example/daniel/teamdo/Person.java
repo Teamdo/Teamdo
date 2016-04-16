@@ -1,6 +1,7 @@
 package com.example.daniel.teamdo;
 import android.graphics.Picture;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
@@ -20,6 +21,19 @@ public class Person {
     private String beschreibung;
     private int myProjektID;
     private ArrayList<Project> likedProjekte;
+
+    public Person() {
+        ArrayList<String> skills = new ArrayList<String>();
+        ArrayList<String> likedProjekte = new ArrayList<String>();
+    }
+
+    public void addSkill(String skill) {
+        this.skills.add(skill);
+    }
+
+    public void addLikedProjekte(Project projekt) {
+        this.likedProjekte.add(projekt);
+    }
 
     public int getId() {
         return id;
@@ -45,10 +59,6 @@ public class Person {
         return bild;
     }
 
-    public ArrayList<String> getSkills() {
-        return skills;
-    }
-
     public int getHandynummer() {
         return handynummer;
     }
@@ -61,9 +71,6 @@ public class Person {
         return myProjektID;
     }
 
-    public ArrayList<Project> getLikedProjekte() {
-        return likedProjekte;
-    }
 
     public void setId(int id) {
         this.id = id;
@@ -89,9 +96,6 @@ public class Person {
         this.bild = bild;
     }
 
-    public void setSkills(ArrayList<String> skills) {
-        this.skills = skills;
-    }
 
     public void setHandynummer(int handynummer) {
         this.handynummer = handynummer;
@@ -105,7 +109,4 @@ public class Person {
         this.myProjektID = myProjektID;
     }
 
-    public void setLikedProjekte(ArrayList<Project> likedProjekte) {
-        this.likedProjekte = likedProjekte;
-    }
 }
