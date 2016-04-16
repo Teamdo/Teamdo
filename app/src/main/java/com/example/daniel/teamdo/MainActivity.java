@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         {
             case "btn_00profil":
                 Intent getProfilScreenIntent = new Intent(this, Screen1.class);
+                startActivity(getProfilScreenIntent);
                 break;
         }
     }
