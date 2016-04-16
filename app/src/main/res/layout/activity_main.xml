@@ -15,9 +15,13 @@
         android:text="Profil"
         android:id="@+id/btn_00profil"
         android:layout_above="@+id/btn_00project"
-        android:layout_centerHorizontal="true"
         android:layout_marginBottom="74dp"
-        android:onClick="onClick"/>
+        android:onClick="onClick"
+        android:layout_alignRight="@+id/btn_00project"
+        android:layout_alignEnd="@+id/btn_00project"
+        android:layout_alignLeft="@+id/btn_00project"
+        android:layout_alignStart="@+id/btn_00project"
+        android:background="#7db9e8" />
 
 
     <Button
@@ -26,7 +30,11 @@
         android:text="Create/ manage Project"
         android:id="@+id/btn_00project"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignLeft="@+id/btn_00join"
+        android:layout_alignStart="@+id/btn_00join"
+        android:layout_alignRight="@+id/btn_00join"
+        android:layout_alignEnd="@+id/btn_00join"
+        android:background="#7db9e8" />
 
     <Button
         android:layout_width="wrap_content"
@@ -35,5 +43,16 @@
         android:id="@+id/btn_00join"
         android:layout_below="@+id/btn_00project"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="75dp" />
+        android:layout_marginTop="75dp"
+        android:background="#7db9e8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Navigate"
+        android:id="@+id/lbl_00navigieren"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
 </RelativeLayout>
