@@ -1,6 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
 
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="83dp"
+            android:layout_height="83dp"
+            android:id="@+id/imageView"
+            android:layout_row="0"
+            android:layout_column="0"
+
+            android:layout_columnWeight="3"
+            android:layout_rowSpan="3"
+            android:layout_columnSpan="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Beruf:"
+            android:id="@+id/BerufTextView"
+            android:layout_row="1"
+            android:layout_column="2" />
+
+        <EditText
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_row="1"
+            android:layout_column="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Organisation:"
+            android:id="@+id/textView"
+            android:layout_row="3"
+            android:layout_column="2" />
+
+        <EditText
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText3"
+            android:layout_row="3"
+            android:layout_column="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Name:"
+            android:id="@+id/textView2"
+            android:layout_row="4"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText4"
+            android:layout_row="4"
+            android:layout_column="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Name:"
+            android:id="@+id/textView3"
+            android:layout_row="5"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText5"
+            android:layout_row="5"
+            android:layout_column="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Name:"
+            android:id="@+id/textView4"
+            android:layout_row="6"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText6"
+            android:layout_row="6"
+            android:layout_column="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Name:"
+            android:id="@+id/NameTextView"
+            android:layout_row="0"
+            android:layout_column="2" />
+
+        <EditText
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:layout_row="0"
+            android:layout_column="3" />
+
+    </GridLayout>
 </LinearLayout>
