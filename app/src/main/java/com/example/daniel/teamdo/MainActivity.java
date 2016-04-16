@@ -18,11 +18,21 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick(View view)
     {
+        Intent getProfilScreenIntent;
+
         switch (res.getResourceEntryName(view.getId()))
         {
             case "btn_00profil":
-                Intent getProfilScreenIntent = new Intent(this, Screen1.class);
-                startActivity(getProfilScreenIntent);
+                getProfilScreenIntent = new Intent(this, Screen1.class);
+                startActivity(getProfilScreenIntent) ;
+                break;
+            case "btn_00project":
+                getProfilScreenIntent = new Intent(this, Screen2.class);
+                startActivity(getProfilScreenIntent) ;
+                break;
+            case "btn_00join":
+                getProfilScreenIntent = new Intent(this, Screen3.class);
+                startActivity(getProfilScreenIntent) ;
                 break;
         }
     }
