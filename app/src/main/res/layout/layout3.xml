@@ -23,16 +23,21 @@
             android:layout_height="75dp"
             android:id="@+id/img_03heart"
             android:src="@mipmap/btn_heart"
-            android:background="#00000000"
+            android:background="#ffffff"
             android:layout_below="@+id/img_03projektbild"
             android:layout_centerHorizontal="true"
-            android:scaleType="fitXY" />
+            android:scaleType="fitXY"
+            android:clickable="true" />
 
         <ImageButton
             android:layout_width="350dp"
             android:layout_height="350dp"
             android:id="@+id/img_03projektbild"
             android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/tobi"
+            android:scaleType="fitXY"
+            android:background="#fffff"
+            android:clickable="true" />
     </RelativeLayout>
 </LinearLayout>
