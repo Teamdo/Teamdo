@@ -11,8 +11,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     Resources res;
-    public static Person me;
-    public static Project myProject;
+    static Person me;
+    static Project myProject;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
