@@ -14,14 +14,15 @@ public class PagerAdapter extends FragmentPagerAdapter {
     }
 
     @Override
-    public Fragment getItem(int arg0){
-        switch (arg0){
+    public Fragment getItem(int position){
+       // FragmentOne f = new FragmentOne();
+        switch (position){
             case 0:
-                return new FragmentOne();
+                return new FragmentOne(); //FragmentOne.newInstance();
             case 1:
-                return new FragmentTwo();
-            case 2:
-                return new FragmentThree();
+                return new FragmentOne(); //FragmentOne.newInstance();
+          //  case 2:
+           //     return new FragmentThree();
             default:
                 break;
         }
@@ -30,6 +31,6 @@ public class PagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount(){
-        return 3;
+        return 2;
     }
 }
