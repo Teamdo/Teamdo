@@ -1,8 +1,9 @@
 package com.example.daniel.teamdo;
+
 import android.graphics.Picture;
+import android.widget.ImageView;
 
 import java.io.Serializable;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
@@ -16,6 +17,7 @@ public class Person implements Serializable{
     private String beruf;
     private String organisation;
     private Picture bild;
+    private ImageView imgView;
     private String skills;
     private int handynummer;
     private String beschreibung;
@@ -27,7 +29,7 @@ public class Person implements Serializable{
         ArrayList<String> likedProjekte = new ArrayList<String>();
     }
 
-    public  Person(String name, String beruf, String organisation, int handynummer)
+    public Person(String name, String beruf, String organisation, int handynummer)
     {
         ArrayList<String> likedProjekte = new ArrayList<String>();
         this.name = name;
@@ -67,6 +69,7 @@ public class Person implements Serializable{
     }
 
     public Picture getBild() {
+
         return bild;
     }
 
@@ -99,7 +102,8 @@ public class Person implements Serializable{
         this.organisation = organisation;
     }
 
-    public void setBild(Picture bild) {
+    public void setBild(Picture bildPath) {
+
         this.bild = bild;
     }
 

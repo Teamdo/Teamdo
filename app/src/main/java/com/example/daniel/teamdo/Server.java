@@ -1,5 +1,7 @@
 package com.example.daniel.teamdo;
 
+import android.graphics.Picture;
+
 import java.util.ArrayList;
 
 /**
@@ -22,27 +24,25 @@ public class Server {
         addPerson(new Person("Daniel Olafson", "Student", "Oth Regensburg", 011222222));
         addPerson(new Person("Sandro Volpicella", "Student", "Oth Regensburg", 011222222));
 
-
+        new Picture();
     }
+
     public static Server getInstance() {
-        if(instance == null) {
+        if (instance == null) {
             instance = new Server();
         }
         return instance;
     }
 
-    public void addPerson(Person p)
-    {
+    public void addPerson(Person p) {
         personen.add(p);
     }
 
-    public void addProject(Project p)
-    {
+    public void addProject(Project p) {
         projects.add(p);
     }
 
-    public ArrayList<Person> getPersonen()
-    {
+    public ArrayList<Person> getPersonen() {
         return personen;
     }
 }

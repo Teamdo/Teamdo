@@ -27,9 +27,9 @@
         android:text="Name:"
         android:id="@+id/lbl_04name"
         android:layout_alignTop="@+id/img_04profilePicture"
-        android:layout_alignLeft="@+id/lbl_04job"
-        android:layout_alignStart="@+id/lbl_04job"
-        android:layout_margin="5dp" />
+        android:layout_alignLeft="@+id/lbl_04organization"
+        android:layout_alignStart="@+id/lbl_04organization"
+        android:layout_marginTop="23dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -41,8 +41,7 @@
         android:layout_column="2"
         android:layout_alignBottom="@+id/img_04profilePicture"
         android:layout_toRightOf="@+id/lbl_04number"
-        android:layout_toEndOf="@+id/lbl_04number"
-        android:layout_margin="5dp" />
+        android:layout_toEndOf="@+id/lbl_04number" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -53,7 +52,8 @@
         android:layout_row="3"
         android:layout_column="0"
         android:layout_below="@+id/img_04profilePicture"
-        android:layout_margin="5dp" />
+        android:layout_alignLeft="@+id/img_04profilePicture"
+        android:layout_alignStart="@+id/img_04profilePicture" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -85,12 +85,14 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/txt_04name"
-        android:layout_alignTop="@+id/lbl_04name"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="false"
         android:layout_toRightOf="@+id/lbl_04name"
         android:layout_toEndOf="@+id/lbl_04name"
-        android:layout_margin="5dp" />
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignBottom="@+id/lbl_04name"
+        android:layout_alignTop="@+id/lbl_04name" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -99,59 +101,68 @@
         android:text="Job:"
         android:id="@+id/lbl_04job"
         android:layout_above="@+id/txt_04organization"
-        android:layout_toRightOf="@+id/img_04profilePicture"
-        android:layout_toEndOf="@+id/img_04profilePicture"
-        android:layout_margin="5dp" />
+        android:layout_toRightOf="@+id/lbl_04number"
+        android:layout_toEndOf="@+id/lbl_04number" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/txt_04job"
-        android:layout_alignTop="@+id/lbl_04job"
         android:layout_toRightOf="@+id/lbl_04job"
         android:layout_toEndOf="@+id/lbl_04job"
-        android:layout_margin="5dp" />
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignTop="@+id/lbl_04job" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/txt_04organization"
-        android:layout_alignBottom="@+id/lbl_04organization"
         android:layout_toRightOf="@+id/lbl_04organization"
         android:layout_toEndOf="@+id/lbl_04organization"
-        android:layout_margin="5dp" />
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_above="@+id/lbl_04skills" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/txt_04skills"
-        android:layout_alignBottom="@+id/lbl_04skills"
         android:layout_toRightOf="@+id/lbl_04skills"
         android:layout_toEndOf="@+id/lbl_04skills"
-        android:layout_margin="5dp" />
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignBottom="@+id/lbl_04skills" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/txt_04number"
-        android:layout_alignTop="@+id/lbl_04number"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_toRightOf="@+id/lbl_04number"
         android:layout_toEndOf="@+id/lbl_04number"
-        android:layout_margin="5dp" />
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignTop="@+id/lbl_04number" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/txt_04description"
-        android:layout_alignBottom="@+id/lbl_04description"
         android:layout_toRightOf="@+id/lbl_04description"
-        android:layout_margin="5dp" />
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignBottom="@+id/lbl_04description" />
 
 </RelativeLayout>
