@@ -47,4 +47,6 @@ public class FragmentOne extends Fragment {
         return rootView;
         //return inflater.inflate(R.layout.layout3, container, false);
     }
+
+
 }

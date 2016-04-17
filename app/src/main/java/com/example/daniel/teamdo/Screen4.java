@@ -15,16 +15,17 @@ public class Screen4 extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout4);
-        
         Server s = Server.getInstance();
         person = s.getPersonen().get(FragmentOne.counter);
+        refillValues();
     }
 
     private void refillValues()
     {
+        System.err.println("FEHLER: " + person.getName());
+
         TextView nameview = (TextView) findViewById(R.id.txt_04name);
         nameview.setText(person.getName());
-
 
         TextView jobview = (TextView) findViewById(R.id.txt_04job);
         jobview.setText(person.getBeruf());
@@ -35,11 +36,13 @@ public class Screen4 extends Activity{
         TextView skillview = (TextView) findViewById(R.id.txt_04skills);
         skillview.setText(person.getSkills());
 
-        TextView numberview = (TextView) findViewById(R.id.txt_04number);
-        numberview.setText(person.getHandynummer());
-
         TextView beschreibungview = (TextView) findViewById(R.id.txt_04description);
         beschreibungview.setText(person.getBeschreibung());
+
+        TextView numberview = (TextView) findViewById(R.id.txt_04number);
+        numberview.setText("" + person.getHandynummer());
+
+
     }
     
 }

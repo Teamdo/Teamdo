@@ -19,6 +19,8 @@
         <activity android:name=".Screen1"></activity>
         <activity android:name=".Screen2"></activity>
         <activity android:name=".Screen3"></activity>
+        <activity android:name=".Screen4"></activity>
+
     </application>
 
 </manifest>
