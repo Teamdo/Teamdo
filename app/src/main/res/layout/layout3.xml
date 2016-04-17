@@ -12,11 +12,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Projekttitel"
+            android:text="Projecttitle:"
             android:id="@+id/lbl_03projekttitel"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="5dp" />
+            android:layout_marginTop="5dp"
+            android:layout_above="@+id/img_03projektbild"
+            android:layout_alignLeft="@+id/img_03projektbild"
+            android:layout_alignStart="@+id/img_03projektbild"
+            android:layout_alignRight="@+id/img_03projektbild"
+            android:layout_alignEnd="@+id/img_03projektbild" />
 
         <ImageButton
             android:layout_width="75dp"
@@ -37,7 +41,8 @@
             android:layout_centerHorizontal="true"
             android:src="@mipmap/tobi"
             android:scaleType="fitXY"
-            android:background="#fffff"
+            android:background="#ffffff"
             android:clickable="true" />
+
     </RelativeLayout>
 </LinearLayout>
