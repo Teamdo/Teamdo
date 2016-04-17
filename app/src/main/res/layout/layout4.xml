@@ -26,48 +26,10 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Name:"
         android:id="@+id/lbl_04name"
-        android:layout_below="@+id/txt_04name"
-        android:layout_toRightOf="@+id/lbl_04organization"
-        android:layout_toEndOf="@+id/lbl_04organization" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txt_04name"
-        android:layout_row="0"
-        android:layout_column="3"
-        android:inputType="text"
         android:layout_alignTop="@+id/img_04profilePicture"
-        android:layout_toEndOf="@+id/lbl_04name"
-        android:layout_toRightOf="@+id/lbl_04name" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Job:"
-        android:id="@+id/lbl_04job"
-        android:layout_row="1"
-        android:layout_column="2"
-        android:layout_below="@+id/txt_04name"
-        android:layout_toRightOf="@+id/img_04profilePicture"
-        android:layout_toEndOf="@+id/img_04profilePicture"
-        android:layout_marginTop="40dp" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txt_04job"
-        android:layout_row="1"
-        android:layout_column="3"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="false"
-        android:layout_alignLeft="@+id/txt_04name"
-        android:inputType="text"
-        android:layout_marginLeft="5px"
-        android:layout_marginRight="5px"
-        android:layout_below="@+id/lbl_04name"
-        android:layout_alignBottom="@+id/lbl_04job" />
+        android:layout_alignLeft="@+id/lbl_04job"
+        android:layout_alignStart="@+id/lbl_04job"
+        android:layout_margin="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -77,21 +39,10 @@
         android:id="@+id/lbl_04organization"
         android:layout_row="2"
         android:layout_column="2"
-        android:layout_alignBottom="@+id/txt_04organization"
-        android:layout_alignRight="@+id/lbl_04skills"
-        android:layout_alignEnd="@+id/lbl_04skills" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txt_04organization"
-        android:layout_row="2"
-        android:layout_column="3"
-        android:allowUndo="false"
-        android:inputType="text"
-        android:layout_below="@+id/img_04profilePicture"
-        android:layout_alignLeft="@+id/lbl_04job"
-        android:layout_alignStart="@+id/lbl_04job" />
+        android:layout_alignBottom="@+id/img_04profilePicture"
+        android:layout_toRightOf="@+id/lbl_04number"
+        android:layout_toEndOf="@+id/lbl_04number"
+        android:layout_margin="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -101,21 +52,8 @@
         android:id="@+id/lbl_04skills"
         android:layout_row="3"
         android:layout_column="0"
-        android:layout_below="@+id/txt_04organization"
-        android:layout_alignRight="@+id/lbl_04number"
-        android:layout_alignEnd="@+id/lbl_04number" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txt_04skills"
-        android:layout_row="3"
-        android:layout_column="1"
-        android:layout_columnSpan="3"
-        android:inputType="text"
-        android:layout_alignBottom="@+id/lbl_04skills"
-        android:layout_alignLeft="@+id/txt_04organization"
-        android:layout_alignStart="@+id/txt_04organization" />
+        android:layout_below="@+id/img_04profilePicture"
+        android:layout_margin="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -125,21 +63,10 @@
         android:id="@+id/lbl_04number"
         android:layout_row="4"
         android:layout_column="0"
-        android:layout_below="@+id/lbl_04skills"
-        android:layout_alignRight="@+id/img_04profilePicture"
-        android:layout_alignEnd="@+id/img_04profilePicture" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txt_04number"
-        android:layout_row="4"
-        android:layout_column="1"
-        android:layout_columnSpan="3"
-        android:inputType="phone"
+        android:layout_marginBottom="23dp"
         android:layout_above="@+id/txt_04description"
-        android:layout_toLeftOf="@+id/txt_04skills"
-        android:layout_toStartOf="@+id/txt_04skills" />
+        android:layout_alignLeft="@+id/lbl_04skills"
+        android:layout_alignStart="@+id/lbl_04skills" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -149,20 +76,82 @@
         android:id="@+id/lbl_04description"
         android:layout_row="5"
         android:layout_column="0"
-        android:layout_below="@+id/lbl_04number"
-        android:layout_alignRight="@+id/lbl_04number"
-        android:layout_alignEnd="@+id/lbl_04number" />
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/lbl_04number"
+        android:layout_alignStart="@+id/lbl_04number" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txt_04name"
+        android:layout_alignTop="@+id/lbl_04name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_toRightOf="@+id/lbl_04name"
+        android:layout_toEndOf="@+id/lbl_04name"
+        android:layout_margin="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Job:"
+        android:id="@+id/lbl_04job"
+        android:layout_above="@+id/txt_04organization"
+        android:layout_toRightOf="@+id/img_04profilePicture"
+        android:layout_toEndOf="@+id/img_04profilePicture"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txt_04job"
+        android:layout_alignTop="@+id/lbl_04job"
+        android:layout_toRightOf="@+id/lbl_04job"
+        android:layout_toEndOf="@+id/lbl_04job"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txt_04organization"
+        android:layout_alignBottom="@+id/lbl_04organization"
+        android:layout_toRightOf="@+id/lbl_04organization"
+        android:layout_toEndOf="@+id/lbl_04organization"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txt_04skills"
+        android:layout_alignBottom="@+id/lbl_04skills"
+        android:layout_toRightOf="@+id/lbl_04skills"
+        android:layout_toEndOf="@+id/lbl_04skills"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txt_04number"
+        android:layout_alignTop="@+id/lbl_04number"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/lbl_04number"
+        android:layout_toEndOf="@+id/lbl_04number"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/txt_04description"
-        android:layout_row="5"
-        android:layout_column="1"
-        android:layout_columnSpan="3"
-        android:inputType="text"
         android:layout_alignBottom="@+id/lbl_04description"
-        android:layout_alignLeft="@+id/txt_04number"
-        android:layout_alignStart="@+id/txt_04number" />
+        android:layout_toRightOf="@+id/lbl_04description"
+        android:layout_margin="5dp" />
 
 </RelativeLayout>
