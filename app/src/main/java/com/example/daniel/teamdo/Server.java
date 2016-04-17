@@ -40,4 +40,9 @@ public class Server {
     {
         projects.add(p);
     }
+
+    public ArrayList<Person> getPersonen()
+    {
+        return personen;
+    }
 }
