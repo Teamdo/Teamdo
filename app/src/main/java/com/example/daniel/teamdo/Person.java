@@ -1,13 +1,14 @@
 package com.example.daniel.teamdo;
 import android.graphics.Picture;
 
+import java.io.Serializable;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
  * Created by Tobi on 16.04.2016.
  */
-public class Person {
+public class Person implements Serializable{
     //Daniel und Sandro <3
 
     private int id;
@@ -15,7 +16,7 @@ public class Person {
     private String beruf;
     private String organisation;
     private Picture bild;
-    private ArrayList<String> skills;
+    private String skills;
     private int handynummer;
     private String beschreibung;
     private int myProjektID;
@@ -28,7 +29,6 @@ public class Person {
 
     public  Person(String name, String beruf, String organisation, int handynummer)
     {
-        ArrayList<String> skills = new ArrayList<String>();
         ArrayList<String> likedProjekte = new ArrayList<String>();
         this.name = name;
         this.beruf = beruf;
@@ -36,8 +36,14 @@ public class Person {
         this.handynummer = handynummer;
     }
 
-    public void addSkill(String skill) {
-        this.skills.add(skill);
+    public void setSkills(String s)
+    {
+        skills = s;
+    }
+
+    public String getSkills()
+    {
+        return skills;
     }
 
     public void addLikedProjekte(Project projekt) {
@@ -81,7 +87,7 @@ public class Person {
         this.id = id;
     }
 
-    public void setName(String vorname) {
+    public void setName(String name) {
         this.name = name;
     }
 
