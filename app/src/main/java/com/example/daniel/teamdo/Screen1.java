@@ -19,7 +19,8 @@ public class Screen1 extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout1);
         res = getResources();
-        //me = (Person)getIntent().getSerializableExtra("Person");
+        //ta
+        me = (Person)getIntent().getSerializableExtra("Person");
         if(MainActivity.me != null)
             refillValues();
     }
@@ -77,7 +78,7 @@ public class Screen1 extends Activity{
         TextView nameview = (TextView) findViewById(R.id.txt_01name);
         name = nameview.getText().toString();
 
-
+/*
         TextView jobview = (TextView) findViewById(R.id.txt_01job);
         beruf = jobview.getText().toString();
 
@@ -94,11 +95,12 @@ public class Screen1 extends Activity{
             person.setHandynummer(0);
         TextView beschreibungview = (TextView) findViewById(R.id.txt_01description);
         person.setBeschreibung( beschreibungview.getText().toString());
-
+*/
         person.setName(name);
+        /*
         person.setBeruf(beruf);
         person.setOrganisation(orga);
-        //TODO: project.setPitcher();
+        */
 
 
 
