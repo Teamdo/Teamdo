@@ -40,7 +40,7 @@ public class Screen1 extends Activity{
         skillview.setText(me.getSkills());
 
         TextView numberview = (TextView) findViewById(R.id.txt_04number);
-        numberview.setText(me.getHandynummer());
+        numberview.setText(""+me.getHandynummer());
 
         TextView beschreibungview = (TextView) findViewById(R.id.txt_04description);
         beschreibungview.setText(me.getBeschreibung());
