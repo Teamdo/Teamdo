@@ -41,7 +41,8 @@
         android:layout_column="3"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/lbl_01name"
-        android:layout_margin="5dp" />
+        android:layout_margin="5dp"
+        android:inputType="text" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -66,7 +67,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="false"
         android:layout_alignLeft="@+id/txt_01name"
-        android:layout_margin="5px" />
+        android:layout_margin="5px"
+        android:inputType="text" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -90,7 +92,8 @@
         android:allowUndo="false"
         android:layout_below="@+id/img_01profilePicture"
         android:layout_toRightOf="@+id/lbl_01organization"
-        android:layout_margin="5dp"/>
+        android:layout_margin="5dp"
+        android:inputType="text" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -115,7 +118,8 @@
         android:layout_below="@+id/lbl_01organization"
         android:layout_toRightOf="@+id/lbl_01skills"
         android:layout_alignRight="@+id/txt_01carrier"
-        android:layout_margin="5dp" />
+        android:layout_margin="5dp"
+        android:inputType="text" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -139,7 +143,8 @@
         android:layout_centerVertical="true"
         android:layout_toRightOf="@+id/lbl_01number"
         android:layout_toEndOf="@+id/lbl_01number"
-        android:layout_margin="5dp" />
+        android:layout_margin="5dp"
+        android:inputType="phone" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -165,7 +170,8 @@
         android:layout_alignRight="@+id/txt_01skills"
         android:layout_toRightOf="@+id/lbl_01description"
         android:layout_toEndOf="@+id/lbl_01description"
-        android:layout_margin="5dp" />
+        android:layout_margin="5dp"
+        android:inputType="text" />
 
     <Button
         android:layout_width="wrap_content"
