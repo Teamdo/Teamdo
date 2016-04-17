@@ -26,12 +26,9 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Name:"
         android:id="@+id/lbl_01name"
-        android:layout_row="0"
-        android:layout_column="2"
         android:layout_alignBottom="@+id/txt_01name"
-        android:layout_alignRight="@+id/lbl_01carrier"
-        android:layout_alignEnd="@+id/lbl_01carrier"
-        android:layout_margin="5dp" />
+        android:layout_alignLeft="@+id/lbl_01job"
+        android:layout_alignStart="@+id/lbl_01job" />
 
     <EditText
         android:layout_width="fill_parent"
@@ -48,19 +45,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Carrier:"
-        android:id="@+id/lbl_01carrier"
+        android:text="Job:"
+        android:id="@+id/lbl_01job"
         android:layout_row="1"
         android:layout_column="2"
-        android:layout_alignBottom="@+id/txt_01carrier"
-        android:layout_toRightOf="@+id/img_01profilePicture"
-        android:layout_toEndOf="@+id/img_01profilePicture"
-        android:layout_margin="5dp" />
+        android:layout_alignBottom="@+id/txt_01job"
+        android:layout_alignLeft="@+id/txt_01organization"
+        android:layout_alignStart="@+id/txt_01organization" />
 
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txt_01carrier"
+        android:id="@+id/txt_01job"
         android:layout_row="1"
         android:layout_column="3"
         android:layout_below="@+id/lbl_01name"
@@ -117,7 +113,7 @@
         android:layout_columnSpan="3"
         android:layout_below="@+id/lbl_01organization"
         android:layout_toRightOf="@+id/lbl_01skills"
-        android:layout_alignRight="@+id/txt_01carrier"
+        android:layout_alignRight="@+id/txt_01job"
         android:layout_margin="5dp"
         android:inputType="text" />
 
