@@ -73,7 +73,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hinzufügen"
+        android:text="Add"
         android:id="@+id/btn_02addSkills"
         android:layout_alignBottom="@+id/txt_02skills"
         android:layout_alignParentRight="true"
