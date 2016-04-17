@@ -31,12 +31,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/lbl_02projektbeschreibung2"
-        android:layout_weight="0.38"
-        android:background="#ffffff"
+        android:linksClickable="false"
         android:height="150dp"
         android:layout_below="@+id/lbl_02projektbeschreibung"
-        android:layout_centerHorizontal="true"
-        android:editable="false" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
