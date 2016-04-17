@@ -11,8 +11,7 @@ public class Person {
     //Daniel und Sandro <3
 
     private int id;
-    private String vorname;
-    private String nachname;
+    private String name;
     private String beruf;
     private String organisation;
     private Picture bild;
@@ -27,6 +26,16 @@ public class Person {
         ArrayList<String> likedProjekte = new ArrayList<String>();
     }
 
+    public  Person(String name, String beruf, String organisation, int handynummer)
+    {
+        ArrayList<String> skills = new ArrayList<String>();
+        ArrayList<String> likedProjekte = new ArrayList<String>();
+        this.name = name;
+        this.beruf = beruf;
+        this.organisation = organisation;
+        this.handynummer = handynummer;
+    }
+
     public void addSkill(String skill) {
         this.skills.add(skill);
     }
@@ -39,12 +48,8 @@ public class Person {
         return id;
     }
 
-    public String getVorname() {
-        return vorname;
-    }
-
-    public String getNachname() {
-        return nachname;
+    public String getName() {
+        return name;
     }
 
     public String getBeruf() {
@@ -76,12 +81,8 @@ public class Person {
         this.id = id;
     }
 
-    public void setVorname(String vorname) {
-        this.vorname = vorname;
-    }
-
-    public void setNachname(String nachname) {
-        this.nachname = nachname;
+    public void setName(String vorname) {
+        this.name = name;
     }
 
     public void setBeruf(String beruf) {

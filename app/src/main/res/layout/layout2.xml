@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Projektbeschreibung: "
+        android:text="Project description:"
         android:id="@+id/lbl_02projektbeschreibung"
         android:layout_below="@+id/txt_02projekttitel"
         android:layout_alignParentLeft="true"
@@ -27,23 +27,20 @@
         android:layout_marginTop="25dp"
         android:layout_margin="5dp" />
 
-    <TextView
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/lbl_02projektbeschreibung2"
-        android:layout_weight="0.38"
-        android:background="#eae5e5"
+        android:linksClickable="false"
         android:height="150dp"
         android:layout_below="@+id/lbl_02projektbeschreibung"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_margin="5dp" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Projekttitel: "
+        android:text="Projecttitle:"
         android:id="@+id/lbl_02projekttitel"
         android:layout_marginTop="28dp"
         android:layout_alignParentTop="true"
@@ -73,7 +70,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hinzufügen"
+        android:text="Add"
         android:id="@+id/btn_02addSkills"
         android:layout_alignBottom="@+id/txt_02skills"
         android:layout_alignParentRight="true"
@@ -89,7 +86,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Freie Plätze: "
+        android:text="Free spots: "
         android:id="@+id/lbl_02freieplaetze"
         android:layout_below="@+id/txt_02skills"
         android:layout_marginLeft="5dp"
