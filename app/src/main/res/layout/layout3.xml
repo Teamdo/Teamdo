@@ -15,8 +15,12 @@
             android:text="Projekttitel"
             android:id="@+id/lbl_03projekttitel"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="5dp" />
+            android:layout_marginTop="5dp"
+            android:layout_above="@+id/img_03projektbild"
+            android:layout_alignLeft="@+id/img_03projektbild"
+            android:layout_alignStart="@+id/img_03projektbild"
+            android:layout_alignRight="@+id/img_03projektbild"
+            android:layout_alignEnd="@+id/img_03projektbild" />
 
         <ImageButton
             android:layout_width="75dp"
