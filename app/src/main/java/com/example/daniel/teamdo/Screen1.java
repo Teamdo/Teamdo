@@ -62,8 +62,10 @@ public class Screen1 extends Activity{
         person.setSkills( skillview.getText().toString());
 
         TextView numberview = (TextView) findViewById(R.id.txt_01number);
-        person.setHandynummer( Integer.parseInt(numberview.getText().toString()));
-
+        if(!(numberview.getText().toString()).equals(""))
+            person.setHandynummer( Integer.parseInt(numberview.getText().toString()));
+        else
+            person.setHandynummer(0);
         TextView beschreibungview = (TextView) findViewById(R.id.txt_01description);
         person.setBeschreibung( beschreibungview.getText().toString());
 
