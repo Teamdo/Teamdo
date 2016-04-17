@@ -19,8 +19,8 @@ public class Screen1 extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout1);
         res = getResources();
-        me = (Person)getIntent().getSerializableExtra("Person");
-        if(me != null)
+        //me = (Person)getIntent().getSerializableExtra("Person");
+        if(MainActivity.me != null)
             refillValues();
     }
 
@@ -40,7 +40,7 @@ public class Screen1 extends Activity{
         skillview.setText(me.getSkills());
 
         TextView numberview = (TextView) findViewById(R.id.txt_04number);
-        numberview.setText(me.getHandynummer());
+        numberview.setText(""+me.getHandynummer());
 
         TextView beschreibungview = (TextView) findViewById(R.id.txt_04description);
         beschreibungview.setText(me.getBeschreibung());

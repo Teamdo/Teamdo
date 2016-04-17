@@ -11,7 +11,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     Resources res;
-    Person me;
+    static Person me;
+    static Project myProject;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,8 +32,9 @@ public class MainActivity extends AppCompatActivity {
                     startActivityForResult(getProfilScreenIntent, 1);
                 }else{
                     getProfilScreenIntent = new Intent(this, Screen1.class);
+                    //TODO:string array
                     getProfilScreenIntent.putExtra("Person", me);
-                    startActivityForResult(getProfilScreenIntent, 1);
+                    startActivityForResult(getProfilScreenIntent, 2);
                 }
                 break;
             case "btn_00project":
@@ -55,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         // Check which request we're responding to
-        if (requestCode == 1) {
+        if (requestCode == 1 || requestCode == 2) {
             // Make sure the request was successful
             if (resultCode == RESULT_OK) {
                 Person p = new Person();

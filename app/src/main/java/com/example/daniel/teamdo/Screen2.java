@@ -26,7 +26,7 @@ public class Screen2 extends Activity
     {
         if ((res.getResourceEntryName(view.getId())).equals("btn_02ok"))
         {
-            packAllesInEinObject();
+            Server.getInstance().addProject(packAllesInEinObject());
 
         }
 
@@ -55,7 +55,7 @@ public class Screen2 extends Activity
         project.setTitel(varTitel);
         project.addSkill(varSkills);
         project.setFreiePlätze(varPlatz);
-       //TODO: project.setPitcher();
+        project.setPitcher(MainActivity.me);
 
 
         return project;

@@ -35,6 +35,7 @@ public class Screen3 extends FragmentActivity
         else if((res.getResourceEntryName(view.getId())).equals("img_03heart")) {
             Server s = Server.getInstance();
             Person p = s.getPersonen().get(FragmentOne.counter);
+            MainActivity.myProject.addLikedTeilnehmer(p);
         }
 
     }
