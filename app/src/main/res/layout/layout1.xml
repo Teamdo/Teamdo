@@ -125,10 +125,9 @@
         android:id="@+id/lbl_01number"
         android:layout_row="4"
         android:layout_column="0"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/lbl_01organization"
-        android:layout_alignStart="@+id/lbl_01organization"
-        android:layout_margin="5dp" />
+        android:layout_alignBottom="@+id/txt_01number"
+        android:layout_alignLeft="@+id/lbl_01skills"
+        android:layout_alignStart="@+id/lbl_01skills" />
 
     <EditText
         android:layout_width="fill_parent"
@@ -175,9 +174,19 @@
         android:id="@+id/btn_01matches"
         android:layout_row="6"
         android:layout_column="0"
-        android:layout_marginBottom="39dp"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/lbl_01description"
-        android:layout_alignStart="@+id/lbl_01description" />
+        android:layout_margin="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/btn_01save"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:layout_alignTop="@+id/btn_01matches"
+        android:layout_alignRight="@+id/txt_01description"
+        android:layout_alignEnd="@+id/txt_01description" />
 
 </RelativeLayout>
