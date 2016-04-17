@@ -189,6 +189,7 @@
         android:layout_column="0"
         android:layout_alignTop="@+id/btn_01matches"
         android:layout_alignRight="@+id/txt_01description"
-        android:layout_alignEnd="@+id/txt_01description" />
+        android:layout_alignEnd="@+id/txt_01description"
+        android:onClick="onClick"/>
 
 </RelativeLayout>

@@ -22,8 +22,10 @@ public class Screen1 extends Activity{
 
     public void onClick(View view)
     {
-        if ((res.getResourceEntryName(view.getId())).equals("btn_01speichern"))
+
+        if ((res.getResourceEntryName(view.getId())).equals("btn_01save"))
         {
+
             Person p = packAllesInEinObject();
             Intent returnIntent = new Intent();
             returnIntent.putExtra("Name", p.getName());
