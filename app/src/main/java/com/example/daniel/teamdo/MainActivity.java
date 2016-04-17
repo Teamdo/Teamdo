@@ -26,8 +26,14 @@ public class MainActivity extends AppCompatActivity {
         switch (res.getResourceEntryName(view.getId()))
         {
             case "btn_00profil":
-                getProfilScreenIntent = new Intent(this, Screen1.class);
-                startActivityForResult(getProfilScreenIntent, 1);
+                if(me == null) {
+                    getProfilScreenIntent = new Intent(this, Screen1.class);
+                    startActivityForResult(getProfilScreenIntent, 1);
+                }else{
+                    getProfilScreenIntent = new Intent(this, Screen1.class);
+                    getProfilScreenIntent.putExtra("Person", me);
+                    startActivityForResult(getProfilScreenIntent, 1);
+                }
                 break;
             case "btn_00project":
                 if(me != null) {

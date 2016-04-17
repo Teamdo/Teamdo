@@ -1,13 +1,14 @@
 package com.example.daniel.teamdo;
 import android.graphics.Picture;
 
+import java.io.Serializable;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
  * Created by Tobi on 16.04.2016.
  */
-public class Person {
+public class Person implements Serializable{
     //Daniel und Sandro <3
 
     private int id;

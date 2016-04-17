@@ -13,11 +13,37 @@ import android.widget.TextView;
 public class Screen1 extends Activity{
 
     Resources res;
+    Person me;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout1);
         res = getResources();
+        me = (Person)getIntent().getSerializableExtra("Person");
+        if(me != null)
+            refillValues();
+    }
+
+    private void refillValues()
+    {
+        TextView nameview = (TextView) findViewById(R.id.txt_01name);
+        nameview.setText(me.getName());
+
+
+        TextView jobview = (TextView) findViewById(R.id.txt_01job);
+        jobview.setText(me.getBeruf());
+
+        TextView organisation = (TextView) findViewById(R.id.txt_01organization);
+        organisation.setText(me.getOrganisation());
+
+        TextView skillview = (TextView) findViewById(R.id.txt_01skills);
+        skillview.setText(me.getSkills());
+
+        TextView numberview = (TextView) findViewById(R.id.txt_01number);
+        numberview.setText(me.getHandynummer());
+
+        TextView beschreibungview = (TextView) findViewById(R.id.txt_01description);
+        beschreibungview.setText(me.getBeschreibung());
     }
 
     public void onClick(View view)
