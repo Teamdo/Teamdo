@@ -22,7 +22,6 @@ public class Screen4 extends Activity{
 
     private void refillValues()
     {
-        System.err.println("FEHLER: " + person.getName());
 
         TextView nameview = (TextView) findViewById(R.id.txt_04name);
         nameview.setText(person.getName());
