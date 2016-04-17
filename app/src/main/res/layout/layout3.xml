@@ -37,7 +37,8 @@
             android:layout_centerHorizontal="true"
             android:src="@mipmap/tobi"
             android:scaleType="fitXY"
-            android:background="#fffff"
+            android:background="#ffffff"
             android:clickable="true" />
+
     </RelativeLayout>
 </LinearLayout>

@@ -34,7 +34,8 @@
         android:layout_alignStart="@+id/btn_00join"
         android:layout_alignRight="@+id/btn_00join"
         android:layout_alignEnd="@+id/btn_00join"
-        android:background="#7db9e8" />
+        android:background="#7db9e8"
+        android:onClick="onClick"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -44,7 +45,8 @@
         android:layout_below="@+id/btn_00project"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="75dp"
-        android:background="#7db9e8" />
+        android:background="#7db9e8"
+        android:onClick="onClick"/>
 
     <TextView
         android:layout_width="wrap_content"
