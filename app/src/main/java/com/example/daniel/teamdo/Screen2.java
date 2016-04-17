@@ -46,10 +46,10 @@ public class Screen2 extends Activity
         varBeschreibung = projektBeschreibung.getText().toString();
 
         TextView skills = (TextView) findViewById(R.id.txt_02skills);
-        varSkills = projektBeschreibung.getText().toString();
+        varSkills = skills.getText().toString();
 
         TextView platz = (TextView) findViewById(R.id.txt_02freieplaetze);
-        varPlatz = Integer.parseInt(projektBeschreibung.getText().toString());
+        varPlatz = Integer.parseInt(platz.getText().toString());
 
         project.setBeschreibung(varBeschreibung);
         project.setTitel(varTitel);
