@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 p.setOrganisation(data.getStringExtra("Orga"));
                 p.setBeruf(data.getStringExtra("Beruf"));
                 me = p;
-                System.out.println(p.getName());
+
             }
         }
     }

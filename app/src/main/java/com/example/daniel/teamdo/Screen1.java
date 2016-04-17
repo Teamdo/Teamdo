@@ -27,6 +27,7 @@ public class Screen1 extends Activity{
         {
 
             Person p = packAllesInEinObject();
+
             Intent returnIntent = new Intent();
             returnIntent.putExtra("Name", p.getName());
             returnIntent.putExtra("Beruf", p.getBeruf());
@@ -47,6 +48,8 @@ public class Screen1 extends Activity{
         TextView projektTitel = (TextView) findViewById(R.id.txt_01name);
         name = projektTitel.getText().toString();
 
+
+
         TextView jobview = (TextView) findViewById(R.id.txt_01job);
         beruf = jobview.getText().toString();
 
@@ -57,6 +60,7 @@ public class Screen1 extends Activity{
         person.setBeruf(beruf);
         person.setOrganisation(orga);
         //TODO: project.setPitcher();
+
 
 
         return person;

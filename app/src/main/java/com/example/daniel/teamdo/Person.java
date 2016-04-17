@@ -81,7 +81,7 @@ public class Person {
         this.id = id;
     }
 
-    public void setName(String vorname) {
+    public void setName(String name) {
         this.name = name;
     }
 
