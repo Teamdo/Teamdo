@@ -15,7 +15,7 @@ public class Person {
     private String beruf;
     private String organisation;
     private Picture bild;
-    private ArrayList<String> skills;
+    private String skills;
     private int handynummer;
     private String beschreibung;
     private int myProjektID;
@@ -28,7 +28,6 @@ public class Person {
 
     public  Person(String name, String beruf, String organisation, int handynummer)
     {
-        ArrayList<String> skills = new ArrayList<String>();
         ArrayList<String> likedProjekte = new ArrayList<String>();
         this.name = name;
         this.beruf = beruf;
@@ -36,8 +35,14 @@ public class Person {
         this.handynummer = handynummer;
     }
 
-    public void addSkill(String skill) {
-        this.skills.add(skill);
+    public void setSkills(String s)
+    {
+        skills = s;
+    }
+
+    public String getSkills()
+    {
+        return skills;
     }
 
     public void addLikedProjekte(Project projekt) {

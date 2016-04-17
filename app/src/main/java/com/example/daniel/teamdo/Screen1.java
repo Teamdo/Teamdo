@@ -32,6 +32,9 @@ public class Screen1 extends Activity{
             returnIntent.putExtra("Name", p.getName());
             returnIntent.putExtra("Beruf", p.getBeruf());
             returnIntent.putExtra("Orga", p.getOrganisation());
+            returnIntent.putExtra("Skill", p.getSkills());
+            returnIntent.putExtra("Handy", p.getHandynummer());
+            returnIntent.putExtra("Besch", p.getBeschreibung());
             setResult(Activity.RESULT_OK,returnIntent);
             finish();
         }
@@ -45,9 +48,8 @@ public class Screen1 extends Activity{
         int varPlatz;
         Person person = new Person();
 
-        TextView projektTitel = (TextView) findViewById(R.id.txt_01name);
-        name = projektTitel.getText().toString();
-
+        TextView nameview = (TextView) findViewById(R.id.txt_01name);
+        name = nameview.getText().toString();
 
 
         TextView jobview = (TextView) findViewById(R.id.txt_01job);
@@ -55,6 +57,15 @@ public class Screen1 extends Activity{
 
         TextView organisation = (TextView) findViewById(R.id.txt_01organization);
         orga = organisation.getText().toString();
+
+        TextView skillview = (TextView) findViewById(R.id.txt_01skills);
+        person.setSkills( skillview.getText().toString());
+
+        TextView numberview = (TextView) findViewById(R.id.txt_01number);
+        person.setHandynummer( Integer.parseInt(numberview.getText().toString()));
+
+        TextView beschreibungview = (TextView) findViewById(R.id.txt_01description);
+        person.setBeschreibung( beschreibungview.getText().toString());
 
         person.setName(name);
         person.setBeruf(beruf);

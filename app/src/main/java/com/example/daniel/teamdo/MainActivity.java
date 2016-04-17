@@ -6,6 +6,7 @@ import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,8 +30,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(getProfilScreenIntent, 1);
                 break;
             case "btn_00project":
-                getProfilScreenIntent = new Intent(this, Screen2.class);
-                startActivity(getProfilScreenIntent) ;
+                if(me != null) {
+                    getProfilScreenIntent = new Intent(this, Screen2.class);
+                    startActivity(getProfilScreenIntent);
+                }else
+                {
+                    Toast.makeText(getBaseContext(),"Create profile first",
+                            Toast.LENGTH_SHORT).show();
+                }
                 break;
             case "btn_00join":
                 getProfilScreenIntent = new Intent(this, Screen3.class);
@@ -49,6 +56,10 @@ public class MainActivity extends AppCompatActivity {
                 p.setName(data.getStringExtra("Name"));
                 p.setOrganisation(data.getStringExtra("Orga"));
                 p.setBeruf(data.getStringExtra("Beruf"));
+
+                p.setSkills(data.getStringExtra("Skill"));
+                p.setHandynummer(data.getIntExtra("Handy", 0));
+                p.setBeschreibung(data.getStringExtra("Besch"));
                 me = p;
 
             }
