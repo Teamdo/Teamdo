@@ -14,29 +14,29 @@ import android.widget.TextView;
  */
 public class FragmentOne extends Fragment {
 
-   // public static FragmentOne newInstance(){
-     //   FragmentOne fragone = new FragmentOne();
-       // return  fragone;
+    // public static FragmentOne newInstance(){
+    //   FragmentOne fragone = new FragmentOne();
+    // return  fragone;
     //}
 
-    public FragmentOne(){
+    public FragmentOne() {
 
     }
 
     TextView txt_fragView;
 
     static int counter = 0;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         Server s = Server.getInstance();
-
-
         counter++;
-        if(counter >= s.getPersonen().size()){
+        if (counter >= s.getPersonen().size()) {
             counter = counter % s.getPersonen().size();
         }
-        Person person =  s.getPersonen().get(counter);
+
+        Person person = s.getPersonen().get(counter);
 
 
         View rootView = inflater.inflate(R.layout.layout3, container, false);
