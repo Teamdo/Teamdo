@@ -26,23 +26,23 @@ public class Screen1 extends Activity{
 
     private void refillValues()
     {
-        TextView nameview = (TextView) findViewById(R.id.txt_01name);
+        TextView nameview = (TextView) findViewById(R.id.txt_04name);
         nameview.setText(me.getName());
 
 
-        TextView jobview = (TextView) findViewById(R.id.txt_01job);
+        TextView jobview = (TextView) findViewById(R.id.txt_04job);
         jobview.setText(me.getBeruf());
 
-        TextView organisation = (TextView) findViewById(R.id.txt_01organization);
+        TextView organisation = (TextView) findViewById(R.id.txt_04organization);
         organisation.setText(me.getOrganisation());
 
-        TextView skillview = (TextView) findViewById(R.id.txt_01skills);
+        TextView skillview = (TextView) findViewById(R.id.txt_04skills);
         skillview.setText(me.getSkills());
 
-        TextView numberview = (TextView) findViewById(R.id.txt_01number);
+        TextView numberview = (TextView) findViewById(R.id.txt_04number);
         numberview.setText(me.getHandynummer());
 
-        TextView beschreibungview = (TextView) findViewById(R.id.txt_01description);
+        TextView beschreibungview = (TextView) findViewById(R.id.txt_04description);
         beschreibungview.setText(me.getBeschreibung());
     }
 
@@ -74,25 +74,25 @@ public class Screen1 extends Activity{
         int varPlatz;
         Person person = new Person();
 
-        TextView nameview = (TextView) findViewById(R.id.txt_01name);
+        TextView nameview = (TextView) findViewById(R.id.txt_04name);
         name = nameview.getText().toString();
 
 
-        TextView jobview = (TextView) findViewById(R.id.txt_01job);
+        TextView jobview = (TextView) findViewById(R.id.txt_04job);
         beruf = jobview.getText().toString();
 
-        TextView organisation = (TextView) findViewById(R.id.txt_01organization);
+        TextView organisation = (TextView) findViewById(R.id.txt_04organization);
         orga = organisation.getText().toString();
 
-        TextView skillview = (TextView) findViewById(R.id.txt_01skills);
+        TextView skillview = (TextView) findViewById(R.id.txt_04skills);
         person.setSkills( skillview.getText().toString());
 
-        TextView numberview = (TextView) findViewById(R.id.txt_01number);
+        TextView numberview = (TextView) findViewById(R.id.txt_04number);
         if(!(numberview.getText().toString()).equals(""))
             person.setHandynummer( Integer.parseInt(numberview.getText().toString()));
         else
             person.setHandynummer(0);
-        TextView beschreibungview = (TextView) findViewById(R.id.txt_01description);
+        TextView beschreibungview = (TextView) findViewById(R.id.txt_04description);
         person.setBeschreibung( beschreibungview.getText().toString());
 
         person.setName(name);

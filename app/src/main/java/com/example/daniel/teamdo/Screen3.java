@@ -1,6 +1,7 @@
 package com.example.daniel.teamdo;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
@@ -26,6 +27,11 @@ public class Screen3 extends FragmentActivity
     }
 
     public void onImageClick() {
+        Server s = Server.getInstance();
+        Person p = s.getPersonen().get(FragmentOne.counter);
+
+        Intent getProfilScreenIntent = new Intent(this, Screen4.class);
+        startActivity(getProfilScreenIntent);
 
     }
 }
