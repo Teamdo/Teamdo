@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     Resources res;
     static Person me;
-    static Project myProject;
+    static Project myProject = new Project();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

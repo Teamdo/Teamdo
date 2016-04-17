@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import java.io.Serializable;
+
 /**
  * Created by Tobi on 16.04.2016.
  */
@@ -20,9 +22,12 @@ public class Screen1 extends Activity{
         setContentView(R.layout.layout1);
         res = getResources();
         //ta
-        me = (Person)getIntent().getSerializableExtra("Person");
-        if(MainActivity.me != null)
-            refillValues();
+        Serializable data =getIntent().getSerializableExtra("Person");
+        if(data != null)
+        {
+        me = (Person) data;
+        //if(MainActivity.me != null)
+            refillValues();}
     }
 
     private void refillValues()

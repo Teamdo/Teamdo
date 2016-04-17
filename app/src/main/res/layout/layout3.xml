@@ -30,7 +30,7 @@
             android:layout_centerHorizontal="true"
             android:scaleType="fitXY"
             android:clickable="true"
-            android:onClick="onHeartClick"/>
+            android:onClick="onClick"/>
 
         <ImageButton
             android:layout_width="350dp"

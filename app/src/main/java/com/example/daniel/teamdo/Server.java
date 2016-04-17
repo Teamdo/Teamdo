@@ -9,8 +9,8 @@ public class Server {
 
     private static Server instance = null;
 
-    private ArrayList<Person> personen;
-    private ArrayList<Project> projects;
+    ArrayList<Person> personen;
+    ArrayList<Project> projects;
 
     protected Server() {
         personen = new ArrayList<Person>();
@@ -21,6 +21,10 @@ public class Server {
         addPerson(new Person("Sophia Geserer", "Student", "Oth Regensburg", 011222222));
         addPerson(new Person("Daniel Olafson", "Student", "Oth Regensburg", 011222222));
         addPerson(new Person("Sandro Volpicella", "Student", "Oth Regensburg", 011222222));
+
+        for(Person p : personen)
+            p.likedProjekte = new ArrayList<Project>();
+
 
 
     }

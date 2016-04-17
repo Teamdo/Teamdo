@@ -67,21 +67,6 @@
         android:layout_alignRight="@+id/txt_02freieplaetze"
         android:layout_margin="5dp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add"
-        android:id="@+id/btn_02addSkills"
-        android:layout_alignBottom="@+id/txt_02skills"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:background="#7db9e8"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:layout_alignLeft="@+id/btn_02ok"
-        android:layout_alignStart="@+id/btn_02ok" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -97,7 +82,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txt_02freieplaetze"
-        android:layout_below="@+id/btn_02addSkills"
         android:layout_toRightOf="@+id/lbl_02freieplaetze"
         android:layout_alignRight="@+id/lbl_02projektbeschreibung"
         android:layout_alignEnd="@+id/lbl_02projektbeschreibung" />
@@ -116,7 +100,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ok"
+        android:text="Save"
         android:id="@+id/btn_02ok"
         android:background="#7db9e8"
         android:layout_alignTop="@+id/btn_02delete"

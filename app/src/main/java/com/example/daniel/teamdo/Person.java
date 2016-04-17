@@ -20,16 +20,15 @@ public class Person implements Serializable{
     private int handynummer;
     private String beschreibung;
     private int myProjektID;
-    private ArrayList<Project> likedProjekte;
+    ArrayList<Project> likedProjekte;
 
     public Person() {
-        ArrayList<String> skills = new ArrayList<String>();
-        ArrayList<String> likedProjekte = new ArrayList<String>();
+        ArrayList<Project> likedProjekte = new ArrayList<Project>();
     }
 
     public  Person(String name, String beruf, String organisation, int handynummer)
     {
-        ArrayList<String> likedProjekte = new ArrayList<String>();
+        ArrayList<Project> likedProjekte = new ArrayList<Project>();
         this.name = name;
         this.beruf = beruf;
         this.organisation = organisation;
@@ -47,7 +46,8 @@ public class Person implements Serializable{
     }
 
     public void addLikedProjekte(Project projekt) {
-        this.likedProjekte.add(projekt);
+        if(projekt != null)
+            likedProjekte.add(projekt);
     }
 
     public int getId() {
