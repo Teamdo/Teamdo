@@ -21,8 +21,12 @@ public class PagerAdapter extends FragmentPagerAdapter {
                 return new FragmentOne(); //FragmentOne.newInstance();
             case 1:
                 return new FragmentOne(); //FragmentOne.newInstance();
-          //  case 2:
-           //     return new FragmentThree();
+            case 2:
+                return new FragmentOne();
+            case 3:
+                return new FragmentOne();
+            case 4:
+                return new FragmentOne();
             default:
                 break;
         }
@@ -31,6 +35,6 @@ public class PagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount(){
-        return 2;
+        return 5;
     }
 }

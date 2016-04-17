@@ -28,7 +28,8 @@
             android:layout_below="@+id/img_03projektbild"
             android:layout_centerHorizontal="true"
             android:scaleType="fitXY"
-            android:clickable="true" />
+            android:clickable="true"
+            android:onClick="onHeartClick"/>
 
         <ImageButton
             android:layout_width="350dp"
@@ -39,6 +40,7 @@
             android:src="@mipmap/tobi"
             android:scaleType="fitXY"
             android:background="#ffffff"
-            android:clickable="true" />
+            android:clickable="true"
+            android:onClick="onImageClick"/>
 
     </RelativeLayout>

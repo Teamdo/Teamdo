@@ -31,11 +31,13 @@ public class FragmentOne extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         Server s = Server.getInstance();
 
-        Person person =  s.getPersonen().get(counter);
+
         counter++;
         if(counter >= s.getPersonen().size()){
-           counter = counter % s.getPersonen().size();
+            counter = counter % s.getPersonen().size();
         }
+        Person person =  s.getPersonen().get(counter);
+
 
         View rootView = inflater.inflate(R.layout.layout3, container, false);
 

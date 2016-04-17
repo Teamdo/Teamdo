@@ -19,4 +19,13 @@ public class Screen3 extends FragmentActivity
         PagerAdapter padapter = new PagerAdapter(getSupportFragmentManager());
         viewpager.setAdapter(padapter);
     }
+
+    public void onHeartClick() {
+        Server s = Server.getInstance();
+        Person p = s.getPersonen().get(FragmentOne.counter);
+    }
+
+    public void onImageClick() {
+
+    }
 }
